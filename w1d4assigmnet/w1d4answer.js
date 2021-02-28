@@ -151,4 +151,6 @@
 //     console.log(row);
 // }
 
-
+let prompt= require('prompt-sync')();
+let user_input =prompt("please enter ");
+console.log(user_input);
