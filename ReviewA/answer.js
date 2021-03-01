@@ -163,9 +163,37 @@
 // }else{
 // console.log("sorry but You have been locked out")
 // }
+//  } 
 //  }
- 
-//  }
+// 3. An employee at a grocery store must frequently place boxes of cans in stacks. Write a program
+// that allows him to enter the total number of boxes and the number of boxes he will place in
+// each stack. Your program must output the number of stacks he will have to make. All the stacks
+// except the last one must have the exact number of boxes that the employee specifies. The last
+// stack must have the exact number or fewer boxes. For example, if the employee enters 74 total
+// boxes and 6 boxes in each stack your program must output 13.
+// let prompt= require('prompt-sync')();
+// let totalBox=+prompt("please enter total number of boxes in stack")
+// let EachBox=+prompt("please enter number of boxes to be placed in stack")
+// let numStack=totalBox/EachBox
+// // console.log(numStack)
+// let exactNum=Math.ceil(numStack)
+// console.log(exactNum)
+// exactNum--
+// console.log(parseFloat(exactNum));
+// 5. When you exercise to strengthen your heart, you should maintain your heart rate within a
+// range. To find that range, subtract your age from 220. This difference is your maximum heart
+// rate per minute. Your heart simply will not beat faster than this maximum (220 − age). When
+// exercising to strengthen your heart, you should keep your heart rate between 65% and 85% of
+// your heart’s maximum. Write a JavaScript program that asks for a person’s age and computes
+// // and outputs the slowest and fastest rates necessary to strengthen his heart.
+//  let prompt= require('prompt-sync')();
+// let age=+prompt("enter your age")
+// let myMuxRange=220-age;
+// console.log("Muximum heart rate is: "+myMuxRange)
+// let slowest=0.65*myMuxRange
+// let fastest=0.85*myMuxRange
+// console.log("The slowest rate is: "+slowest)
+
 
 
 
