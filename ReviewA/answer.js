@@ -207,6 +207,27 @@
 // }
 // console.log(isPrime); 
 
+//let number1=20;
+//let number2=40;
+let hcf;
+function HCMofnumber(number1, number2){
 
+//let hcf;
+// take input
+    //let number1; 
+//prompt('Enter a first positive integer: ');
+     //let number2;
+//prompt('Enter a second positive integer: ');
 
+// looping from 1 to number1 and number2
+for (let i = 1; i <= number1 && i <= number2; i++) {
+
+    // check if is factor of both integers
+    if( number1 % i == 0 && number2 % i == 0) {
+       return hcf = i;
+    }
+}
+//console.log(hcf);
+}
+console.log(HCMofnumber(20, 24));
 
