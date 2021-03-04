@@ -2,14 +2,17 @@
 // greatestCommonDivisor, which will compute GCD (Greatest Common Divisor) of two
 // numbers. GCD is the largest number that divides both. For example GCD of 20 and 28 is 4 and
 // // GCD of 98 and 56 is 14.
+   function greatestCommonDivisor(num1, num2){
+       let largest =0;
+       for(let i=2; i<=Math.min(num1, num2); i++){
+           if(num1%i===0&&num2%i===0){
+               largest=i;
+           }
+       }
 
-// var gcd = function(a, b) {
-//     if (b == 0) {
-//         return a;
-//     }
-// return gcd(b, a % b);
-// };
-// console.log(gcd(20,12));
+
+   }
+   console.log(greatestCommonDivisor(20,12));
 
 // 5. Write a function expression to find LCM of any two numbers using the
 // greatestCommonDivisor function from previous question. Assign it to the variable
@@ -17,22 +20,29 @@
 // divided evenly by both numbers. Write it as a function expression.
 
 // program to find the HCF or GCD of two integers
+let LCM;
+function LCMofnumber(number1, number2){
 
-// let hcf;
-// // take input
-// const number1 = 20;
-// //prompt('Enter a first positive integer: ');
-// const number2 = 20;
-// //prompt('Enter a second positive integer: ');
+//let hcf;
+// take input
+    //let number1; 
+//prompt('Enter a first positive integer:
+     //let number2;
+//prompt('Enter a second positive integer: ');
 
-// // looping from 1 to number1 and number2
-// for (let i = 1; i <= number1 && i <= number2; i++) {
+// looping from 1 to number1 and number2
+for (let i = 1; i <= number1 && i <= number2; i++) {
 
-//     // check if is factor of both integers
-//     if( number1 % i == 0 && number2 % i == 0) {
-//         hcf = i;
-//     }
-// }
+    // check if is factornode  of both integers
+    if( number1 % i == 0 && number2 % i !== 0) {
+         LCM =number1*number2;
+       console.log(LCM);
+    }
+}
+//console.log(hcf);
+}
+console.log(LCMofnumber(30,100));
+
 // // display the hcf
 // console.log(`HCF of ${number1} and ${number2} is ${hcf}.`)
 // 6. Now write a new version of leastCommonMultiple that uses the
@@ -42,7 +52,7 @@
 // // take input
 // const number1 = 30;
 // //prompt('Enter a first positive integer: ');
-// const number2 =20;
+// const number2 =20;`
 // // prompt('Enter a second positive integer: ');
 // let HCM;
 // // looping from 1 to number1 and number2
